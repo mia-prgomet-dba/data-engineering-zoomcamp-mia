@@ -7,10 +7,7 @@ authors = [
     { name = "Mia Prgomet", email = "mia.ostalo@gmail.com" }
 ]
 requires-python = ">=3.13"
-dependencies = [
-    "pandas>=3.0.5",
-    "pyarrow>=25.0.1",
-]
+dependencies = []
 
 [project.scripts]
 pipeline = "pipeline:main"
@@ -18,3 +15,9 @@ pipeline = "pipeline:main"
 [build-system]
 requires = ["uv_build>=0.12.10,<0.13.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+    "pgcli>=4.6.0",
+]
