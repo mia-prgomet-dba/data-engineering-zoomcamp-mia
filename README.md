@@ -9,7 +9,7 @@
 - Ran the first "uv sync".
 - Understood the difference between "pyproject.toml" and "uv.lock".
 
-## 2026-09-07 (nastavak)
+## 2026-09-07 
 - Working in JupyterLabu.
 - Dataset loaded in PostgreSQL.
 - Stala na: (upiši točno gdje si stala)
