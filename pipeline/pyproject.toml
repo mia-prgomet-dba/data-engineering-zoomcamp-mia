@@ -7,7 +7,11 @@ authors = [
     { name = "Mia Prgomet", email = "mia.ostalo@gmail.com" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "psycopg2>=2.9.12",
+    "sqlalchemy>=2.0.52",
+    "tqdm>=4.70.0",
+]
 
 [project.scripts]
 pipeline = "pipeline:main"
