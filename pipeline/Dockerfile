@@ -5,12 +5,11 @@ WORKDIR /code
 
 ENV PATH="/app/.venv/bin:$PATH"
 
-COPY "pyproject.toml" "uv.lock" ".python-version" ./
+COPY pyproject.toml .python-version uv.lock ./
+RUN uv sync --locked --no-install-project
 
-RUN uv sync --locked
-
-COPY pipeline.py pipeline.py
+COPY ingest_data.py .
 
 
-ENTRYPOINT ["python", "pipeline.py"]
+ENTRYPOINT ["uv", "run", "ingest_data.py"]
 
