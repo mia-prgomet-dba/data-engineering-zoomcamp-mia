@@ -10,6 +10,11 @@
 - Understood the difference between "pyproject.toml" and "uv.lock".
 
 ## 2026-09-07 
-- Working in JupyterLabu.
+- Working in JupyterLab.
 - Dataset loaded in PostgreSQL.
 
+## 2026-10-06
+
+- Set up Google Cloud authentication in Terraform.
+- Modularized Terraform setup using variables.tf.
+- Destroyed infrastructure and cleaned up resources.
