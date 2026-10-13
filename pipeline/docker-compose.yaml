@@ -1,3 +1,7 @@
+volumes:
+  ny_taxi_postgres_data:
+    driver: local
+
 services:
   pgdatabase:
     image: postgres:18
@@ -24,5 +28,3 @@ services:
 
 
 
-volumes:
-  pgadmin_data:
